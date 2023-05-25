@@ -1,0 +1,46 @@
+Compile all the Java files:
+javac RemoteInterface.java ClientInterface.java ServerImpl.java ClientImpl.java Server.java Client.java
+
+Start the RMI registry:
+start rmiregistry
+
+Run the server:
+java Server
+
+Run the client:
+java Client
+
+
+
+
+
+
+AIM: Implement multi-threaded client/server Process communication using RMI.
+Objective:
+Multi-threading.
+How Remote Method Invocation Work.
+How RMI allows objects to invoke methods on remote objects.
+How to write Distributed Object Application.
+Outcome:
+Implement multi-threaded client/server Process communication using RMI.
+Explanation:
+Tools used :
+1. Windows
+2. Linux
+3. Java language
+RMI (Remote Method Invocation) is used for distributed object references system.
+A distributed object is an object which publishes its interface on other machines. A
+Remote Object is a distributed object whose state is encapsulated. Stub and Skeleton
+are two objects used to communicate with the remote object.
+Stub: Stub is a gateway for client program which is used to communicate with
+skeleton object, by establishing a connection between them.
+Skeleton: Resides on Server program which is used for passing the request from
+stub to the remote interface.
+Steps to Run Java RMI Application in Console
+Creation of classes and interfaces for the problem statement: The steps involved
+in this are as follows:
+Create a Remote Interface which extends java.rmi.Remote:
+A remote interface determines the object that can be invoked remotely by the client.
+This interface can be communicated with the client’s program. This Interface must
+extend java.rmi.Remote Interface.
+Problem Statement: Create an RMI Application for finding the factorial of a number
